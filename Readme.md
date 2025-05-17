@@ -6,11 +6,8 @@ HabitMaster IGNITE é um aplicativo interativo e gamificado de construção de h
 
 O objetivo é ajudar os usuários a definir, rastrear e manter hábitos positivos de uma forma divertida, motivadora e personalizada, recebendo orientação de um "Mestre de Jogo e Coach de Hábitos" virtual.
 
-**[Link para o vídeo de demonstração (se houver)]** 
-**(Adicione o link do seu vídeo aqui quando o tiver)**
-
-**[Link para o projeto no Colab (compartilhável)]** 
-**(Compartilhe seu notebook Colab "com qualquer pessoa com o link" e cole o link aqui)**
+**[Link para o projeto no Colab]** 
+**(https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing)**
 
 <!-- 
 Substitua o placeholder abaixo por um screenshot real do seu aplicativo em funcionamento!
