@@ -1,112 +1,160 @@
-# HabitMaster IGNITE ⚔️ - Forje sua Lenda, um Hábito de Cada Vez!
+# HabituAI ⚔️ - Forje sua Lenda, um Hábito de Cada Vez!
 
-## 🔥 Sobre o Projeto
+<div align="center">
+    <img alt="Python Badge" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=%231A1A1A">
+    <img alt="Gradio Badge" src="https://img.shields.io/badge/Gradio-FF8C00?style=for-the-badge&logo=gradio&logoColor=white&labelColor=%231A1A1A">
+    <img alt="Google Gemini Badge" src="https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white&labelColor=%231A1A1A">
+    <img alt="Git Badge" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&labelColor=%231A1A1A">
+    <img alt="Github Badge" src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=%231A1A1A">
+  <h2>Acesse o Notebook: <br>https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing</h2>
+</div>
+<div align="center">
+  <!-- Adicione um logo para o HabituAI se tiver, ou remova esta seção -->
+  <!-- <img align="center" alt="HabituAI Logo" height="150px" width="150px" src="./path/to/your/habitai_logo.png"> -->
+</div>
+<div align="center">
+  <img align="center" alt="Banner do HabituAI" height="auto" width="800" src="URL_DO_SEU_BANNER_AQUI_SE_TIVER.gif"> 
+  <!-- Crie um banner legal para o HabituAI ou remova esta linha -->
+</div>
 
-HabitMaster IGNITE é um aplicativo interativo e gamificado de construção de hábitos, desenvolvido como projeto para a Imersão IA da Alura. Utilizando o poder da Inteligência Artificial generativa (Google Gemini), este app transforma o processo de desenvolvimento pessoal em uma jornada épica de RPG, onde o usuário é o herói e seus hábitos são as missões a serem conquistadas!
+## 1. 🔥 Sobre o Projeto
 
-O objetivo é ajudar os usuários a definir, rastrear e manter hábitos positivos de uma forma divertida, motivadora e personalizada, recebendo orientação de um "Mestre de Jogo e Coach de Hábitos" virtual.
+HabituAI é um aplicativo interativo e gamificado de construção de hábitos, desenvolvido como projeto para a Imersão IA da Alura. Utilizando o poder da Inteligência Artificial generativa (Google Gemini), este app transforma o processo de desenvolvimento pessoal em uma jornada épica de RPG, onde o usuário é o herói ("Aventureiro") e seus hábitos são as missões a serem conquistadas!
 
-**[Link para o projeto no Colab]** 
-**(https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing)**
+O objetivo é ajudar os usuários a definir, rastrear e manter hábitos positivos de uma forma divertida, motivadora e personalizada, recebendo orientação de um "Guia de Hábitos" virtual, o HabituAI.
 
-<!-- 
-Substitua o placeholder abaixo por um screenshot real do seu aplicativo em funcionamento!
-Para adicionar um screenshot:
-1. Tire um print da tela do seu app.
-2. Faça upload dessa imagem para a pasta do seu projeto no GitHub.
-3. Substitua o link abaixo pelo caminho relativo da imagem no seu repositório. 
-   Exemplo: ![Gameplay Screenshot](./screenshots/meu_app.png) 
--->
-![App Screenshot](https://via.placeholder.com/700x450.png?text=Insira+um+Screenshot+do+App+HabitMaster+IGNITE+Aqui)
+## 2. 🖼️ Visão Geral da Interface
 
-## ✨ Funcionalidades Principais (MVP)
+<p align="center">
+  <strong>Tela de Login</strong><br>
+  <em>Acesso seguro à sua jornada de hábitos.</em><br>
+  <img width="70%" src="./src/login.jpeg" alt="Tela de Login do HabituAI">
+</p>
+<br>
+<p align="center">
+  <strong>Chat Interativo com HabituAI</strong><br>
+  <em>Converse com seu guia para definir metas e receber missões.</em><br>
+  <img width="70%" src="./src/chat.jpeg" alt="Interface de Chat com HabituAI">
+</p>
+<br>
+<p align="center">
+  <strong>Dashboard de Missões e Perfil</strong><br>
+  <em>Acompanhe suas missões ativas, seu progresso (Nível, XP, Gold) e marque suas conquistas.</em><br>
+  <img width="70%" src="./src/missoes.jpeg" alt="Dashboard de Missões e Perfil do Aventureiro">
+</p>
+<br>
+<p align="center">
+  <strong>Loja do Aventureiro (Vislumbre)</strong><br>
+  <em>Um espaço para futuras recompensas e itens para sua jornada.</em><br>
+  <img width="70%" src="./src/perfil.jpeg" alt="Aba da Loja do Aventureiro">
+  <!-- Ajuste a legenda se 'perfil.jpeg' mostrar o perfil ou outro aspecto -->
+</p>
 
-*   **Criação de Jornada Personalizada via Chat com IA:**
-    *   O usuário interage com o "HabitMaster IGNITE" (IA) para descrever seus objetivos e aspirações.
-    *   A IA faz perguntas de refinamento para entender melhor as necessidades do usuário, tornando o processo guiado.
-    *   Com base na conversa, a IA sugere um plano inicial de "Missões" (hábitos) personalizadas.
-*   **Plano de Hábitos Gamificado:**
-    *   Cada missão/hábito possui:
-        *   Um nome temático e divertido.
-        *   Uma meta clara e alcançável.
-        *   Frequência sugerida (diário, semanal, etc.).
-        *   Recompensa em XP (Pontos de Experiência) e Gold (Moedas de Ouro) ao ser concluída.
-*   **Dashboard de Missões Interativo (Simulado):**
-    *   Visualização clara das missões ativas com seus detalhes.
-    *   Sistema de checkboxes (usando `gr.CheckboxGroup`) para o usuário marcar as missões como concluídas dentro da sessão.
-*   **Sistema de Progressão Simples:**
-    *   Acúmulo de XP e Gold ao completar missões.
-    *   Sistema de Níveis: o usuário avança de nível ao atingir marcos de XP.
-*   **Interface Amigável e Temática:**
-    *   Desenvolvida com Gradio, utilizando uma paleta de cores escura (preto/cinza) com destaques em verde claro, remetendo a um ambiente de jogo e aventura.
-*   **Aba "Loja do Aventureiro" (Placeholder):**
-    *   Indica planos futuros para utilização do XP e Gold acumulados, como compra de itens virtuais ou customizações, adicionando uma visão de longo prazo para o "jogo".
+## 3. ✨ Funcionalidades Implementadas (MVP)
 
-## 🚀 Tecnologias e Competências Demonstradas
+*   **Login Simulado:** Acesso inicial com credenciais pré-definidas, exibindo o nome do aventureiro na interface principal.
+*   **Chat Inteligente com HabituAI:**
+    *   Interação conversacional para o usuário expressar seus objetivos e desafios relacionados a hábitos.
+    *   A IA (HabituAI) faz perguntas contextuais para refinar o entendimento.
+    *   Geração de planos de "Missões" (hábitos) personalizadas com base na conversa.
+*   **Sistema de Missões Gamificadas:**
+    *   Nomes temáticos para cada missão.
+    *   Metas claras, frequência e recompensas (XP e Gold).
+*   **Dashboard Interativo:**
+    *   **Perfil do Aventureiro:** Exibição de Nível, XP e Gold.
+    *   **Missões Ativas:** Lista de missões atuais com checkboxes para marcar conclusão (atualização em tempo real na sessão).
+*   **Progressão e Gamificação:**
+    *   Acúmulo de XP e Gold ao concluir missões.
+    *   Avanço de Nível com base no XP.
+*   **Interface Temática e Responsiva:**
+    *   Desenvolvida com Gradio, com tema escuro e destaques em verde, otimizada para uma experiência de RPG.
+*   **Loja do Aventureiro (Conceito Inicial):**
+    *   Aba dedicada que introduz a ideia de futuras recompensas e formas de utilizar o XP e Gold.
 
-*   **Linguagem de Programação:** Python
+## 4. 🚀 Tecnologias e Competências
+
+*   **Linguagem:** Python
 *   **Inteligência Artificial Generativa:**
-    *   API do Google Gemini (especificamente, o modelo `gemini-1.5-flash-latest` ou similar).
-    *   **Engenharia de Prompts Avançada:**
-        *   Criação de persona detalhada e consistente para a IA (o "HabitMaster IGNITE").
-        *   Desenvolvimento de instruções de sistema (system prompts) complexas para guiar o fluxo conversacional da IA, incluindo a capacidade de fazer perguntas de follow-up e gerar conteúdo estruturado (planos de hábitos em formato Markdown).
-        *   Design de prompts para obter respostas formatadas que podem ser parcialmente parseadas pela aplicação.
-*   **Interface de Usuário (UI) e Prototipagem Rápida:**
-    *   **Gradio:** Utilizado para criar rapidamente uma interface web interativa diretamente do código Python, demonstrando a viabilidade da ideia.
-    *   Customização de Temas e CSS Básico: Aplicação de um tema visual coeso (escuro com destaques em verde) para melhorar a experiência do usuário.
-    *   Gerenciamento de Estado da UI com `gr.State` para manter a continuidade da sessão do jogo.
-*   **Lógica de Aplicação e Gamificação:**
-    *   Implementação da lógica de sugestão de hábitos baseada na interação com a IA.
-    *   Desenvolvimento de um sistema simples de XP, Gold e Níveis para engajamento do usuário.
-    *   Parseamento básico de texto da saída da IA para extrair informações estruturadas (nomes de missão, metas, recompensas).
-*   **Manipulação de Dados (em memória):**
-    *   Gerenciamento de estado da sessão do usuário (histórico de conversa, plano de hábitos, progresso do jogo) de forma simplificada para o MVP, utilizando variáveis Python.
-*   **Ambiente de Desenvolvimento:** Google Colab (Jupyter Notebooks), facilitando a experimentação e o compartilhamento.
-*   **Controle de Versão:** Git e GitHub para gerenciamento do código-fonte.
+    *   API Google Gemini (modelo `gemini-1.5-flash-latest`).
+    *   **Engenharia de Prompts Avançada:** Persona da IA (HabituAI), instruções de sistema complexas para fluxo conversacional e geração de conteúdo estruturado.
+*   **Interface de Usuário (UI):**
+    *   **Gradio:** Criação de interface web interativa.
+    *   Customização de Temas e CSS.
+    *   Gerenciamento de Estado da UI (`gr.State`).
+*   **Lógica de Aplicação:** Gamificação (XP, Gold, Níveis), parseamento de texto da IA.
+*   **Gerenciamento de Estado:** Variáveis Python para estado da sessão (em memória).
+*   **Ambiente:** Google Colab.
+*   **Controle de Versão:** Git e GitHub.
 
-## 🎯 Objetivos do Projeto (Foco na Imersão IA)
+## 5. 🎯 Objetivos do Projeto (Foco na Imersão IA)
 
-*   **Utilidade:** Abordar o desafio comum da formação de hábitos de uma maneira engajadora e personalizada.
-*   **Criatividade:** Combinar IA conversacional com mecânicas de gamificação para criar uma experiência de usuário única e motivadora.
-*   **Eficácia da IA:** Demonstrar como a IA pode atuar como um coach/mentor interativo, adaptando suas sugestões e planos com base nas entradas do usuário.
-*   **Proficiência em Engenharia de Prompts:** O núcleo da inteligência do aplicativo reside na qualidade e detalhamento dos prompts fornecidos ao modelo Gemini, mostrando a capacidade de elicitar comportamentos complexos e respostas estruturadas da IA.
+*   **Utilidade:** Oferecer uma ferramenta engajadora para o desenvolvimento de hábitos.
+*   **Criatividade:** Unir IA conversacional e gamificação de forma inovadora.
+*   **Eficácia da IA:** Demonstrar a IA como um coach adaptável.
+*   **Engenharia de Prompts:** Evidenciar a capacidade de elicitar comportamentos complexos e respostas estruturadas da IA.
 
-## 🛠️ Como Executar o Projeto (via Google Colab)
+## 6. 🛠️ Como Executar
 
-1.  **Acesse o Notebook no Google Colab:**
-    *   [Link para o Notebook HabitMaster IGNITE](URL_DO_SEU_NOTEBOOK_COMPARTILHADO_AQUI)
-    *(Substitua `URL_DO_SEU_NOTEBOOK_COMPARTILHADO_AQUI` pelo link real)*
-
-2.  **Configure sua Chave da API do Google AI:**
-    *   Na primeira célula do notebook, você encontrará instruções para configurar sua `GOOGLE_API_KEY_HABITOS`. A forma recomendada é através dos "Secrets" do Colab:
-        *   No Colab, clique no ícone de chave (🔑) na barra lateral esquerda.
-        *   Adicione um novo secret com o nome `GOOGLE_API_KEY_HABITOS`.
-        *   Cole sua chave de API do Google AI Studio (Gemini) no campo "Value".
-        *   Certifique-se de que a opção "Notebook access" está marcada.
-
+1.  **Acesse o Notebook:** [Link para o HabituAI no Colab]((https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing))
+2.  **API Key:** Configure sua `GOOGLE_API_KEY` nos "Secrets" do Colab (o nome do secret deve ser `GOOGLE_API_KEY`).
 3.  **Execute as Células em Ordem:**
-    *   **Célula 1:** Instalações e Configuração da API Key. Aguarde a conclusão e verifique se a chave da API foi configurada com sucesso.
-    *   **Célula 2.1:** Estado da Sessão e Constantes do Sistema.
-    *   **Célula 2.2:** Função de Interação com a IA.
-    *   **Célula 2.3:** Funções de Gamificação e Parseamento.
-    *   **Célula 3 (ou 4, conforme sua última numeração):** Definição e Lançamento da Interface Gradio.
-        *   Após a execução desta célula, uma interface Gradio será iniciada e um link público (geralmente com `gradio.live`) será exibido. Clique neste link para abrir o aplicativo em uma nova aba do seu navegador.
+    *   **Célula 1:** Instalações e Configuração da API.
+    *   **Célula 2:** Definições de Backend (Estado, Constantes, Funções IA, Gamificação).
+    *   **Célula 3:** Definição e Lançamento da Interface Gradio.
+4.  **Acesse o Link Público:** Gerado pela Célula 3.
+5.  **Login:** Use as credenciais simuladas (ex: usuário `aventureiro`, senha `habito123`).
+6.  **Interaja:** Converse com o HabituAI!
 
-4.  **Interaja com o HabitMaster IGNITE!**
-    *   Siga as instruções do HabitMaster na interface para definir seus objetivos e receber seu plano de missões gamificado.
+## 7. 🗺️ Roadmap de Evolução (Próximas Aventuras)
 
-## 🔮 Próximos Passos e Melhorias Futuras (Pós-Imersão)
+O HabituAI está apenas no começo de sua jornada! Eis o que planejamos para o futuro:
 
-*   **Persistência de Dados:** Implementar um sistema de banco de dados (ex: SQLite, Firebase) para salvar o progresso do usuário, hábitos e configurações entre sessões, junto com um sistema de login/autenticação.
-*   **Interatividade Avançada no Dashboard:** Permitir que os checkboxes de conclusão de hábitos sejam diretamente clicáveis e atualizem o estado sem depender apenas do input de texto para a IA.
-*   **Desenvolvimento da Loja:** Implementar a funcionalidade da "Loja do Aventureiro" onde XP e Gold podem ser usados.
-*   **Sistema de Recompensas e Conquistas:** Expandir a gamificação com badges, conquistas e recompensas mais variadas.
-*   **Lembretes e Notificações:** Integrar um sistema para lembrar o usuário de seus hábitos.
-*   **Análise de Progresso e Feedback Contínuo da IA:** A IA poderia analisar o progresso ao longo do tempo e oferecer novas sugestões ou ajustes nas missões.
-*   **Melhoria no Parseamento da IA:** Explorar o retorno de JSON pela IA para um parseamento de dados mais robusto e menos dependente da formatação exata do Markdown.
+*   **🛡️ Contas de Aventureiro e Persistência de Dados:**
+    *   Sistema de cadastro/login seguro.
+    *   Banco de dados (SQLite/Firebase) para salvar progresso, missões e perfil.
+*   **🛒 Loja do Aventureiro Completa:**
+    *   Itens compráveis com Gold/XP (customizações, bônus).
+    *   Recompensas por nível e conquistas.
+*   **📈 Dashboard de Progresso Detalhado:**
+    *   Gráficos visuais do progresso dos hábitos.
+    *   Histórico de missões e recompensas.
+*   **🔔 Lembretes Inteligentes:**
+    *   Notificações para auxiliar na manutenção dos hábitos.
+*   **🤝 Elementos Sociais (Opcional):**
+    *   Guildas, desafios em grupo, compartilhamento de progresso.
+*   **🧠 IA Aprimorada:**
+    *   Memória de longo prazo para um coaching mais personalizado.
+    *   Feedback proativo com base no desempenho.
+*   **⚙️ Customização de Missões pelo Usuário:**
+    *   Edição de missões sugeridas e criação de missões próprias.
 
-## 🤝 Contribuições
+## 8. 🤝 Contribuições
 
-Este projeto foi desenvolvido como parte da Imersão IA da Alura. Feedback e sugestões são bem-vindos!
+Este projeto foi desenvolvido por João Batista Ribeiro Neto como parte da Imersão IA da Alura. Feedback e sugestões são muito bem-vindos para enriquecer esta jornada!
 
-*Desenvolvido com 🧠 e 🔥 por João Batista Ribeiro Neto *
+*Desenvolvido com 🧠 e 🔥 por João Batista Ribeiro Neto*
+
+
+Principais Mudanças e Adaptações:
+
+Título e Badges: Ajustei o título e os badges de tecnologia para refletir as ferramentas usadas no HabituAI.
+
+Logo e Banner: Adicionei placeholders para um logo e banner do HabituAI. Se você não tiver, pode remover essas seções.
+
+Número de Seções: Reorganizei para seguir uma numeração mais padrão (Sobre, Visão Geral, Funcionalidades, Tecnologias, Objetivos, Como Executar, Roadmap, Contribuições).
+
+Texto das Seções: Adaptei o conteúdo para descrever o HabituAI, suas funcionalidades, tecnologias e objetivos, mantendo o tom do exemplo que você forneceu.
+
+Imagens: Mantive a estrutura de exibição das imagens com width="70%" e align="center" para uma boa visualização.
+
+Roadmap: Usei o termo "Roadmap de Evolução" e mantive as ideias de funcionalidades futuras que discutimos.
+
+Detalhes de Execução: Ajustei as instruções para corresponder à estrutura de células que estabelecemos (Célula 1, 2, 3).
+
+Nome da API Key: No "Como Executar", mencionei para configurar o secret como GOOGLE_API_KEY (sem o sufixo _HABITOS, a menos que você tenha usado esse nome específico no seu Colab). Ajuste se necessário.
+
+Credenciais de Login: Adicionei um exemplo no "Como Executar".
+
+Direitos Autorais/Status: Removi as seções "Status do Projeto" e "Direitos Autorais" do exemplo do "Juba", pois são muito específicas daquele contexto de processo seletivo. Se você quiser adicionar uma seção de licença ou status, pode fazê-lo.
+
+Espero que esta versão do README esteja mais alinhada com o que você precisa para o HabituAI!
