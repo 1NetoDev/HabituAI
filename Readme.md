@@ -6,22 +6,17 @@
     <img alt="Google Gemini Badge" src="https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white&labelColor=%231A1A1A">
     <img alt="Git Badge" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white&labelColor=%231A1A1A">
     <img alt="Github Badge" src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=%231A1A1A">
-  <h2>Acesse o Notebook: <br>https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing</h2>
 </div>
 <div align="center">
-  <!-- Adicione um logo para o HabituAI se tiver, ou remova esta seção -->
-  <!-- <img align="center" alt="HabituAI Logo" height="150px" width="150px" src="./path/to/your/habitai_logo.png"> -->
-</div>
-<div align="center">
-  <img align="center" alt="Banner do HabituAI" height="auto" width="800" src="URL_DO_SEU_BANNER_AQUI_SE_TIVER.gif"> 
-  <!-- Crie um banner legal para o HabituAI ou remova esta linha -->
+  <img align="center" alt="Banner do HabituAI" height="400" width="400" src="src/habituAI.png">
+    <h2>Acesse o Notebook: <br>https://colab.research.google.com/drive/155DYZMwqGcp9ZLJWiUKcXqyNA0MZqaD0?usp=sharing</h2>
 </div>
 
 ## 1. 🔥 Sobre o Projeto
 
-HabituAI é um aplicativo interativo e gamificado de construção de hábitos, desenvolvido como projeto para a Imersão IA da Alura. Utilizando o poder da Inteligência Artificial generativa (Google Gemini), este app transforma o processo de desenvolvimento pessoal em uma jornada épica de RPG, onde o usuário é o herói ("Aventureiro") e seus hábitos são as missões a serem conquistadas!
+HabituAI é um aplicativo interativo e gamificado de construção de hábitos, desenvolvido como projeto para a Imersão IA da Alura. Utilizando o poder da Inteligência Artificial generativa (Google Gemini), este app transforma o processo de desenvolvimento pessoal em uma jornada épica de RPG, onde o usuário é o herói ("Aventureiro") e seus hábitos são as missões a serem conquistadas! Conseguindo transformar tarefas grandes e objetivos distantes em etapas de uma grande aventura.
 
-O objetivo é ajudar os usuários a definir, rastrear e manter hábitos positivos de uma forma divertida, motivadora e personalizada, recebendo orientação de um "Guia de Hábitos" virtual, o HabituAI.
+O objetivo é ajudar os usuários a definir, rastrear e manter hábitos positivos de uma forma divertida, motivadora e personalizada, recebendo orientação de um "Guia de Hábitos" virtual, o HabituAI. Diferente de outras aplicações a nossa idéia é manter o usuário constantemente motivado atráves das recompensas, ficando viciado em cada vez mais ser melhor.
 
 ## 2. 🖼️ Visão Geral da Interface
 
